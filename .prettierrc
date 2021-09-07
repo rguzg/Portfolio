@@ -1,0 +1,12 @@
+{
+    "printWidth": 100,
+    "tabWidth": 4,
+    "useTabs": false,
+    "trailingComma": "none",
+    "semicolons": true,
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "svelteSortOrder": "options-scripts-markup-styles",
+    "svelteIndentScriptAndStyle": true
+}
+  
