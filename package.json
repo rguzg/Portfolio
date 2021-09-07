@@ -1,0 +1,40 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "description": "My portfolio ft. some Svelte code",
+  "main": "rollup.config.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rguzg/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "svelte"
+  ],
+  "author": "rguzgu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rguzg/Portfolio/issues"
+  },
+  "homepage": "https://github.com/rguzg/Portfolio#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-navigator": "^3.1.5"
+  },
+  "dependencies": {
+    "sirv-cli": "^1.0.0"
+  }
+}
