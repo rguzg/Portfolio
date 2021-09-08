@@ -9,7 +9,7 @@
 </svelte:head>
 
 <Router>
-    <Route path="/test" />
+    <Route path="/palette" component={Palette} primary={false} />
 </Router>
 
 <Styles />
