@@ -1,5 +1,7 @@
 <script>
     import { Router, Route } from "svelte-navigator";
+    import Palette from "./pages/palette.svelte";
+    import { Styles } from "sveltestrap";
 </script>
 
 <svelte:head>
@@ -7,8 +9,10 @@
 </svelte:head>
 
 <Router>
-    <Route path="/test"/>
+    <Route path="/test" />
 </Router>
+
+<Styles />
 
 <style>
     @font-face {
@@ -16,24 +20,30 @@
         src: url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
     }
 
-    * {
-        font-family: Ubuntu;
+    :global(body) {
+        font-family: Ubuntu !important;
         user-select: none;
         padding: 1em;
-        max-width: 240px;
         margin: 0 auto;
     }
 
-    h1 {
-        color: #ff3e00;
-        text-transform: uppercase;
-        font-size: 4em;
-        font-weight: 100;
+    :global(h1) {
+        font-size: 6rem !important;
     }
 
-    @media (min-width: 640px) {
-        main {
-            max-width: none;
-        }
+    :global(h2) {
+        font-size: 5rem !important;
+    }
+
+    :global(h3) {
+        font-size: 4rem !important;
+    }
+
+    :global(h4) {
+        font-size: 3rem !important;
+    }
+
+    :global(h5) {
+        font-size: 2rem !important;
     }
 </style>
